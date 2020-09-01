@@ -189,12 +189,6 @@ namespace Pokojowy_regulator_temperatury
         {
             char ch = e.KeyChar;
 
-            if (ch == 46 && OsteresisValueTextBox.Text.IndexOf('.') != -1)
-            {
-                e.Handled = true;
-                return;
-            }
-
             if (!Char.IsDigit(ch) && ch != 8 && ch != 46 && ch != 45)
             {
                 e.Handled = true;
